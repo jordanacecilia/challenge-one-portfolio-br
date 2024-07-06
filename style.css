@@ -20,7 +20,7 @@ body {
 ol, ul,li {
     list-style: none;
 }
-a{
+a {
     text-decoration: none;
     color: var(--cor-de-link);
 }
@@ -40,9 +40,13 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
-section.menu{
+.menu{
+    /* display: flex;
+    justify-content: space-around; */
 
 }
+
+
 
 /*Sessão Title*/
 
@@ -94,6 +98,7 @@ utilize como referência os breakpoints @media abaixo*/
 
 /* Menu */
 
+
 /*title*/
 
 /*Skills*/
@@ -107,15 +112,114 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (min-width: 360px) {
+
+.all{
+    margin: 16px;
+}
 
 /*Menu*/
 
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 0;
+
+}
+
+.menu__list__item__contato{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.menu__list{
+    display: none;
+}
+
+
 /*Titulo*/
+
+.title{
+    margin-top: 32px;
+}
+
+.title__profile{
+    width: 98px;
+}
+
+.title__container{
+   gap: 16px; 
+}
+
+.title__bio{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+}
+
+.title__subsection{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.44px;
+}
+
+.title__network{
+    display: flex;
+    padding-inline-start: 0px;
+    column-gap: 8px;
+    font-weight: 600;
+}
+
 
 /*Sessão sobre*/
 
+.about__container{
+    /* margin-top: 16px; */
+}
+
+.about_title{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+}
+
+.about__paragraph{ 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.44px;
+}
+
 /*Skills*/
+
+/* .skills{
+    display: flex;
+    row-gap: 32px;
+} */
+
+.skills__title{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    text-align: center;
+}
+
+.skills__line{
+    /* display: flex;
+    flex-wrap: wrap;
+    height: 350px; */
+}
 
 /*Hobbies*/
  
